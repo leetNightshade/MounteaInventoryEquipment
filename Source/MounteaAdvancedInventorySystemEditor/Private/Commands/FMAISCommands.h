@@ -25,6 +25,8 @@ public:
 	{
 	}
 
+	virtual ~FMAISCommands() override = default;
+
 	// TCommands<> interface
 	virtual void RegisterCommands() override;
 
