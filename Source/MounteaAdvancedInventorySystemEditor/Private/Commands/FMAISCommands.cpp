@@ -11,7 +11,15 @@
 
 #include <Commands/FMAISCommands.h>
 
+#define LOCTEXT_NAMESPACE "MAISCommands"
+
 void FMAISCommands::RegisterCommands()
 {
-	
+	// TEMP until upstream fixes us.
+	UI_COMMAND(PluginAction,
+		"PluginAction",	"Generic plugin action command",
+		EUserInterfaceActionType::Button, FInputChord());
 }
+
+#undef LOCTEXT_NAMESPACE
+
