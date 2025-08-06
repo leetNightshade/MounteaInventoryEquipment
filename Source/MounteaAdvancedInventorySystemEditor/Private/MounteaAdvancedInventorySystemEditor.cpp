@@ -410,14 +410,13 @@ void FMounteaAdvancedInventorySystemEditor::RegisterMenus()
 				"MounteaMenu",
 				FUIAction(),
 				FOnGetContent::CreateRaw(this, &FMounteaAdvancedInventorySystemEditor::MakeMounteaMenuWidget),
-				LOCTEXT("MounteaMainMenu_Label", "Mountea Advanced Inventory Menu"),
+				FText(),
 				LOCTEXT("MounteaMainMenu_Tooltip", "📂 Open Mountea Advanced Inventory menu.\n\n❔ Provides link to Documentation, Support Discord and Dialogue tool."),
 				FSlateIcon(FMounteaAdvancedInventoryEditorStyle::GetAppStyleSetName(), "MAISStyleSet.InventorySystemIcon"),
 				false,
 				"MounteaMenu"
 			));
-				
-			MenuEntry.Label = LOCTEXT("MounteaMainMenu_Label", "Mountea Advanced Inventory Menu");
+			
 			MenuEntry.Name = TEXT("MounteaMenu");
 			MenuEntry.StyleNameOverride = "CalloutToolbar";
 			MenuEntry.SetCommandList(PluginCommands);
